@@ -1,0 +1,15 @@
+{
+    "python.testing.pytestArgs": [
+        "config"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./blog",
+        "-p",
+        "*test.py"
+    ]
+}
