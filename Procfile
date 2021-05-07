@@ -1,3 +1,1 @@
-web: gunicorn config/config.wsgi --log-file -
-
-HELLO ARE YOU THERE???
+web: gunicorn config.wsgi --log-file -
