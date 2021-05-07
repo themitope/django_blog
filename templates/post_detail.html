@@ -11,7 +11,7 @@
              <hr>
              <h2>Comments...</h2>
              {% if not post.comments.all %}
-                 No Comments Yet... <a href="">Add One</a>
+                 No Comments Yet... <a href="{%url 'post_comment' post.pk %}" class="btn btn-primary btn-sm">Add One</a>
                  {% else %}
                      {% for comment in post.comments.all %}
                          <strong>
