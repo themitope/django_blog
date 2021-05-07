@@ -129,11 +129,19 @@ STATICFILES_DIRS = [
     str(BASE_DIR.joinpath('static'))
 ]
 
+#SMTP CONFIGURATION
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_PORT = 2525
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = '6af0f58274b405'
+EMAIL_HOST_PASSWORD = '001bebe7e4a468'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# Activate Django-Heroku.
+#Activate Django-Heroku.
 django_heroku.settings(locals())
